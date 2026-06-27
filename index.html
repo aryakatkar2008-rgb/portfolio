@@ -1,0 +1,729 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+
+   <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+<style>
+     :root {
+    --sky-blue: #87CEFA;
+    --pink: #FFB6C1;
+    --dark-blue: #1E3A8A;
+    --light: #f8fafc;
+}
+
+/* Full Page Background */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #87CEFA, #FFB6C1);
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(30, 58, 138, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg,
+            #87CEFA,
+            #6EC6FF,
+            #FFB6C1);
+    color: white;
+}
+
+/* Profile Image Circle */
+.profile-img {
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 8px solid white;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+    animation: float 3s ease-in-out infinite;
+}
+
+/* About Section */
+#about {
+    background: rgba(255,255,255,0.4);
+    border-radius: 25px;
+    margin: 30px;
+    padding: 50px;
+}
+
+/* Skills Section */
+#skills {
+    background: rgba(135,206,250,0.3);
+    border-radius: 25px;
+    margin: 30px;
+    padding: 50px;
+}
+
+/* Trainer Section */
+#our\ trainer {
+    background: rgba(255,182,193,0.3);
+    border-radius: 25px;
+    margin: 30px;
+    padding: 50px;
+}
+
+/* Projects Section */
+#projects {
+    background: rgba(255,255,255,0.4);
+    border-radius: 25px;
+    margin: 30px;
+    padding: 50px;
+}
+
+/* Resume Section */
+#resume {
+    background: rgba(135,206,250,0.3);
+    border-radius: 25px;
+    margin: 30px;
+    padding: 50px;
+}
+
+/* Contact Section */
+#contact {
+    background: rgba(255,182,193,0.3);
+    border-radius: 25px;
+    margin: 30px;
+    padding: 50px;
+}
+
+/* Skill Cards */
+.skill-box {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+    background: linear-gradient(135deg, #87CEFA, #FFB6C1);
+    color: white;
+}
+
+/* Project Cards */
+.project-box {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    transition: 0.5s;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+.project-box:hover {
+    transform: translateY(-10px);
+    background: linear-gradient(135deg, #87CEFA, #FFB6C1);
+    color: white;
+}
+
+/* Contact Box */
+.contact-box {
+    background: rgba(255,255,255,0.95);
+    border-radius: 20px;
+    padding: 40px;
+}
+
+/* Buttons */
+.btn-primary,
+.btn-custom {
+    background: linear-gradient(135deg, #87CEFA, #FF69B4);
+    border: none;
+    color: white;
+}
+
+.btn-primary:hover,
+.btn-custom:hover {
+    background: linear-gradient(135deg, #FF69B4, #87CEFA);
+}
+
+/* Headings */
+h2 {
+    color: #1E3A8A;
+    font-weight: bold;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+        .hero h1,
+        .hero h2,
+        .hero p,
+        .hero a {
+          animation: fadeUp 1s ease forwards;
+        opacity: 0;
+        }
+
+        .hero h1 { animation-delay: 0.3s; }
+        .hero h2 { animation-delay: 0.6s; }
+        .hero p  { animation-delay: 0.9s; }
+        .hero a  { animation-delay: 1.2s; }
+
+    @keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.profile-img {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+.skill-box {
+    transition: all 0.4s ease;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+.skill-box {
+    transition: all 0.4s ease;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+.skill-box {
+    transition: all 0.4s ease;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+.project-box {
+    background: rgb(255, 255, 255);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    transition: all 0.5s;
+}
+
+.project-box:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+.btn-custom {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(108,99,255,0.7);
+    }
+    70% {
+        box-shadow: 0 0 0 15px rgba(108,99,255,0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(108,99,255,0);
+    }
+}
+section {
+    animation: fadeSection 1s ease;
+}
+
+@keyframes fadeSection {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.btn-success.position-fixed {
+    animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+    0%,20%,50%,80%,100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">Arya Katkar</a>
+
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#our trainer">Our Trainer</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#resume">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <!-- Google Translate -->
+                    <div id="google_translate_element" class="ms-3"></div>
+            </div>
+
+           <script>
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi,mr',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+    }, 'google_translate_element');
+}
+</script>
+
+<script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+                    <h5 class="text-info">Hello, I'm</h5>
+                    <h1 class="display-3 fw-bold">Arya Katkar</h1>
+                    <h2 class="mb-4">Electronic And Telecommunication Engineering Student</h2>
+
+                    <p class="lead mb-4">
+                        I am passionate about learning new technologies
+                        and building creative projects.
+                    </p>
+
+                    <a href="#projects" class="btn btn-custom btn-lg me-3">
+                        View Projects
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline-light btn-lg">
+                        Hire Me
+                    </a>
+                </div>
+
+                <div class="col-lg-6 text-center mt-5 mt-lg-3">
+                    <img src="images/arya.jpeg" class="profile-img" alt="Profile">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- About -->
+     <section id="about" class="py-5">
+        
+        <div class="container">
+            <h2 class="text-center mb-4 gray"> About Me </h2>
+            <p class="fs-5 mt-4">
+             I am an Electronics and Telecommunication Engineering student with a strong interest in problem-solving and web development. I enjoy applying logical thinking to solve technical challenges and building websites using modern tools and technologies. I am continuously learning and improving my skills in programming, design, and development to create efficient and user-friendly web applications.
+            <p><b>Education:</b> Electronic And Telecommunication Engineering</p>
+            <p><b>Location:</b> A/P Hivare, Tal-Khanapur, Dist-Sangli, Maharashtra</p>
+            <p><b>Year:</b> Second Year</p>
+            </p>
+        </div>
+    </section>
+<center>
+   <!-- Skills Section -->
+ <section id="skills" class="py-5">
+        
+        <div class="container">
+            <h2 class="text-center mb-4"> My Skills </h2>
+
+        <div class="row g-4">
+
+            <div class="col-md-4">
+                <div class="skill-box">
+                    <img src="images/HTML.jpg" width="100">
+                    <h5 class="mt-3">HTML</h5>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="skill-box">
+                    <img src="images/OIP.webp" width="100">
+                    <h5 class="mt-3">CSS</h5>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="skill-box">
+                    <img src="images/js.png" width="100">
+                    <h5 class="mt-3">JavaScript</h5>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="skill-box">
+                    <img src="images/bootstrap.webp" width="100">
+                    <h5 class="mt-3">Bootstrap</h5>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="skill-box">
+                    <img src="images/programming.png" width="100">
+                    <h5 class="mt-3">Programming</h5>
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <div class="skill-box">
+                    <img src="images/C PRO.jpg" width="100">
+                    <h5 class="mt-3">C Programming</h5>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+</center>
+    <!-- About Trainer -->
+    <section id="our trainer" class="py-5">
+        
+        <div class="container">
+            <h2 class="text-center mb-4 gray"> Our Trainer </h2>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <p><b>Trainer Name:</b> Mr.Ganesh Sutar Sir </p>
+                        <p><b>Education:</b>B.E.IT and Software Developer</p>
+                        <p><b>About Trainer:</b>An Experienced trainer who guide in HTML,CSS,Bootstrap,Javascript and modern web</p>
+                        <p><b>Experience:</b>5 Year</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="images/codexlabz.webp" class="img-fluid rounded-circle" width=300>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  <!-- Projects Section -->
+<section id="projects" class="py-5">
+
+    <div class="container">
+
+        <h2 class="text-center mb-5">Projects</h2>
+
+        <div class="row g-4">
+
+            <!-- Project 1 -->
+            <div class="col-md-4">
+                <div class="project-box text-center">
+                    <h4>Login Form</h4>
+
+                    <p>
+                        A login form is a web interface that authenticates users, granting access to private areas or secure platforms.
+                    </p>
+
+                    <a href="Login Bootstrap.html" class="btn btn-primary" target="_blank">
+                        View Project
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="col-md-4">
+                <div class="project-box text-center">
+                    <h4>Calculator</h4>
+
+                    <p>
+                      A calculator is an electronic device or software used to perform mathematical calculations quickly and accurately.
+                    </p>
+
+                    <a href="task calculator.html" class="btn btn-primary" target="_blank">
+                        View Project
+                    </a>
+                </div>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="col-md-4">
+                <div class="project-box text-center">
+                    <h4>Student Registration Form</h4>
+
+                    <p>
+                       A Student Registration Form is a document used to collect and store information about students during the admission or enrollment process.
+                    </p>
+
+                    <a href="register.html" class="btn btn-primary" target="_blank">
+                        View Project
+                    </a>
+                </div>
+            </div>
+
+             <!-- Project 4 -->
+            <div class="col-md-4">
+                <div class="project-box text-center">
+                    <h4>Time Table</h4>
+
+                    <p>
+                       A timetable is a planned schedule that shows the time and sequence of activities, classes, or tasks to be performed during a day, week, or month. 
+                    </p>
+
+                    <a href="timetable.html" class="btn btn-primary" target="_blank">
+                        View Project
+                    </a>
+                </div>
+            </div>
+
+             <!-- Project 5-->
+            <div class="col-md-4">
+                <div class="project-box text-center">
+                    <h4>Patient Registration Form</h4>
+
+                    <p>
+                    A Patient Registration Form is a document used in hospitals, clinics, and healthcare centers to collect and record the basic information of a patient before providing medical services.
+                    </p>
+
+                    <a href="Patient Registration Form.html" class="btn btn-primary" target="_blank">
+                        View Project
+                    </a>
+                </div>
+            </div>
+             <!-- Project 6 -->
+            <div class="col-md-4">
+                <div class="project-box text-center">
+                    <h4>Contact Form</h4>
+
+                    <p>
+                        A Contact Form is a web form that allows users or visitors to communicate with a website owner or organization by submitting their information and messages online.
+                    </p>
+
+                    <a href="Contact Form.html" class="btn btn-primary" target="_blank">
+                        View Project
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- RESUME SECTION -->
+<section id="resume" class="py-5 bg-light">
+
+    <div class="container">
+
+        <h2 class="text-center mb-5">Resume</h2>
+
+        <div class="row justify-content-center">
+
+            <div class="col-md-6">
+
+                <div class="skill-box text-center">
+
+
+                    <p class="mb-4">
+                        View or download my resume to know more <br> about my education, skills, and projects.
+                    </p>
+
+                    <!-- Buttons -->
+                    <div class="d-flex justify-content-center gap-3 flex-wrap">
+
+                        <a href="resume arya.html" target="_blank"
+                           class="btn btn-primary rounded-pill px-4">
+                            <i class="bi bi-eye"></i> View Resume
+                    </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+    <!-- Contact -->
+    <section id="contact" class="py-5">
+        
+        <div class="container">
+            <h2 class="text-center mb-4 gray">Get In Touch</h2>
+
+            </div>
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-8">
+                    <div class="contact-box">
+
+                        <form>
+
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+
+                                <div class="col-md-6 mb-3">
+                                    <input type="email" class="form-control" placeholder="Your Email">
+                                </div>
+                            </div>
+
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Subject">
+                            </div>
+
+                            <div class="mb-3">
+                                <textarea rows="5" class="form-control" placeholder="Message"></textarea>
+                            </div>
+                             <!-- CAPTCHA BOX -->
+                        <div class="mb-3">
+                            <div class="d-flex align-items-center gap-2">
+                                <div id="captcha" class="captcha-box flex-grow-1"></div>
+                                <button type="button" class="btn btn-secondary" onclick="generateCaptcha()">↻</button>
+                            </div>
+                        </div>
+
+                        <!-- CAPTCHA INPUT -->
+                        <div class="mb-3">
+                            <input type="text" id="captchaInput" class="form-control"
+                                placeholder="Enter CAPTCHA" required>
+                        </div>
+
+                            <button class="btn btn-custom btn-lg w-100">
+                                Send Message
+                            </button>
+
+                        </form>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <script>
+          document.addEventListener("scroll", function () {
+        const navbarCollapse = document.querySelector(".navbar-collapse");
+
+        if (navbarCollapse.classList.contains("show")) {
+        const bsCollapse = bootstrap.Collapse.getInstance(navbarCollapse)
+            || new bootstrap.Collapse(navbarCollapse, {
+                toggle: false
+            });
+
+        bsCollapse.hide();
+            }
+         });
+    </script>
+    
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <div class="container">
+            <h5>Your Name</h5>
+
+            <div class="my-3">
+                <a href="#" class="text-white fs-4 me-3"><i class="bi bi-github"></i></a>
+                <a href="#" class="text-white fs-4 me-3"><i class="bi bi-linkedin"></i></a>
+                <a href="#" class="text-white fs-4 me-3"><i class="bi bi-instagram"></i></a>
+                <a href="#" class="text-white fs-4"><i class="bi bi-twitter-x"></i></a>
+            </div>
+
+            <p class="mb-0">
+                © 2026 All Rights Reserved | Designed with Bootstrap 5
+            </p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <a href="https://wa.me/7038911848" target="_blank"
+        class="btn btn-success position-fixed bottom-0 start-0 m-4 rounded-circle">
+        <i class="bi bi-whatsapp"></i>
+    </a>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+    <a href="#top" class="btn btn-primary position-fixed bottom-0 end-0 m-4 rounded-circle">
+        ↑
+    </a>
+    <script>
+    let captchaValue = "";
+
+    function generateCaptcha() {
+        const chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+        captchaValue = "";
+        for (let i = 0; i < 6; i++) {
+            captchaValue += chars.charAt(Math.floor(Math.random() * chars.length));
+        }
+        document.getElementById("captcha").innerText = captchaValue;
+    }
+
+    function validateCaptcha() {
+        const input = document.getElementById("captchaInput").value;
+
+        if (input === captchaValue) {
+            alert("Message sent successfully!");
+            return true;
+        } else {
+            alert("Invalid CAPTCHA. Please try again.");
+            generateCaptcha();
+            return false;
+        }
+    }
+
+    // Generate CAPTCHA on page load
+    window.onload = generateCaptcha;
+</script>
+
+</body>
+
+</html>
